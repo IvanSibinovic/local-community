@@ -16,6 +16,26 @@ body {
 #topbar div div a:hover {
 	color: #FBEEC1;
 }
+.navbar.scrolled {
+    background: #f9f9f9;
+    border-bottom: 1px solid #000;
+    color: #fff;
+    opacity: 0.8;
+    transition: background 700ms;
+    padding-bottom: 0%;
+    position: sticky; 
+    top: 0px;
+    z-index: 999;
+}
+nav a span {
+	font-size: 28px;
+	font-weight: 700;
+}
+#logo.scrolled-logo {
+	transition: background 700ms;
+	width: 40px;
+	height: 40px;
+}
 nav {
 	background-color: #FBEEC1;
 }

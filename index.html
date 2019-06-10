@@ -37,9 +37,10 @@
       </div>
     </section>
 
-  <nav class="navbar navbar-expand-lg">
+  <nav id="main-navbar" class="navbar navbar-expand-lg">
     <a class="navbar-brand" href="#">
-    	<img src="logo.png" width="80" height="80" alt="Logo">
+    	<img id="logo" src="logo.png" width="80" height="80" alt="Logo">
+    	<span>Charmsville Community</span>
     </a>
     <button class="navbar-toggler btn-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -324,7 +325,7 @@
 			</div>
 		</div>
 	</div>
-	<a href="#" class="btn btn-light text-dark for-more"><h3><i class="fas fa-medal"></i>  other significant citizens </h3></a>
+	<a href="#" class="btn btn-light text-dark for-more"><h3><i class="fas fa-medal"></i>  other significant towners </h3></a>
 </section>
 
 <section id="footer">
@@ -371,9 +372,11 @@
     <script type="text/javascript">
     	$(function () {
             $(document).scroll(function () {
-                var $nav = $("#mainNavbar");
+                var $nav = $("#main-navbar");
                 var $topbar = $("#topbar");
+                var $logo = $('#logo');
                 $nav.toggleClass("scrolled", $(this).scrollTop() > ($nav.height() + $topbar.height()));
+                $logo.toggleClass("scrolled-logo", $(this).scrollTop() > ($nav.height() + $topbar.height()));
             /*    $nav.addClass("scrolled", $(this).scrollTop() > ($nav.height() + $topbar.height())); */
             });
         });
