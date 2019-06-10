@@ -16,6 +16,23 @@ body {
 #topbar div div a:hover {
 	color: #FBEEC1;
 }
+#headline {
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 2000;
+}
+#headline h1, #headline h4 {
+	font-weight: 700;
+	font-size: 64px;
+	color: #f7f7f7;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+#headline h4 {
+	font-size: 48px;
+}
 .navbar.scrolled {
     background: #f9f9f9;
     border-bottom: 1px solid #000;
@@ -259,4 +276,7 @@ section h2 {
 }
 #footer #bottom-line p {
 	margin-bottom: 0;
+}
+html {
+	scroll-behavior: smooth;
 }
