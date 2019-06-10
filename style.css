@@ -33,8 +33,8 @@ nav a span {
 }
 #logo.scrolled-logo {
 	transition: background 700ms;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 }
 nav {
 	background-color: #FBEEC1;
@@ -48,6 +48,13 @@ nav #navbarSupportedContent .navbar-nav .nav-item .nav-link {
 }
 nav button.navbar-toggler {
 	color: #000;
+}
+#main-navbar .navbar-toggler span {
+	font-size: 2rem;
+	padding-right: 10px;
+	border-radius: 10px
+	border: 2px solid #659DBD;
+	color: #659DBD;
 }
 section {
 	padding: 4rem 3rem;
